@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+<div class="container">
+  <p id="description">Thank you for taking the time to give us feedback about your experience with us.</p>
+    <form id="survey-form">
+      <label class="item" id="name-label" for="name">Name: </label>
+      <input class="item" id="name" type="text" name="name" placeholder="Enter your name" required>
+      <label class="item" id="email-label" for="email">Email: </label>
+      <input class="item" id="email" type="email" name="email" placeholder="Enter your email" required>
+      <label class="item" id="number-label" for="number">Years of Experience</label>
+      <input class="item" id="number" type="number" name="years" min="0" max="99" placeholder="Experience" required>
+      <label class="item" id="dropdown-label" for="dropdown">How likely would you recommend our workshops to your friends?</label>
+      <select class="item" id="dropdown" name="recommend">
+          <option disabled value>Select an option</option>
+          <option  value="def">Definitly</option>
+          <option value="likely">Very likely</option>
+          <option value="maybe">Maybe</option>
+          <option value="ratherno">Rather not</option>
+          <option value="noway">No way!</option>
+         </select>
+      <label class="item" id="radio-label">In which workshop did you take part? </label>
+      <ul class="item" id="radio">
+        <li><label for="beginner"><input id="beginner" type="radio" name="radio-buttons" value="2" >Beginner<label></li>
+            <li><label for="advanced"><input id="advanced" type="radio" name="radio-buttons" value="2">Advanced<label></li>
+              <li><label for="expert"><input id="expert" type="radio" name="radio-buttons" value="3">Expert<label></li>
+        </ul> 
+                <label class="item" id="interest-label">What are your interests for future workshops? </label>
+          <ul class="item" id="checkbox">
+            <li><label for="worldnews"><input id="worldnews" type="checkbox" name="interests" value="1" >Worldnews<label></li>
+            <li><label for="sports"><input id="sports" type="checkbox" name="interests" value="2" >Sports<label></li>
+              <li><label for="music"><input id="music" type="checkbox" name="interests" value="3" >Music<label></li>
+                <li><label for="crafts"><input id="crafts" type="checkbox" name="interests" value="4">Crafts<label></li>
+                  <li><label for="outdoors"><input id="outdoors" type="checkbox" name="interests" value="5">Outdoors<label></li>
+                    <li><label for="literature"><input id="literature" type="checkbox" name="interests" value="6">Literature<label></li>
+        </ul> 
+       <label class="item" id="comment-label" for="input-field">Please leave us any comments: </label>
+              <textarea class="item" id="comments" style="height:300px, width:300px" placeholder="Pleace leave your comments"></textarea>
+              <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
